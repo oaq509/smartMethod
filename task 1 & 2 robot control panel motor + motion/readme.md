@@ -37,5 +37,7 @@ table 1 for the 6 motors (contains 7 cloumn "motor1" ...."motor6" + ID)
 table 2 for the motion (contains 4 cloumn "forward - right - left - backward - stop" + ID)
 The ID is increament automatically with data entered
 
+lastly the /assets folder to save all needed libraries like jQuery
+
 ---------------------------------------------------------------------------------------
 
