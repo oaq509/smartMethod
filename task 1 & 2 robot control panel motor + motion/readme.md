@@ -28,7 +28,7 @@ I used HTML to create the structure for the web page with the buttons and every 
 
 also, I used CSS codes to make the style of the page (index.css)
 
-and I programmed a PHP page to get the data the user entered and saved In the database (values.php)
+and I programmed a PHP page to get the data that the user entered and saved in the database (values.php)
 
 I used Apache HTTP Server Version 2.5 (Local Server) localhost
 
