@@ -31,6 +31,11 @@ also, I used CSS codes to make the style of the page (index.css)
 and I programmed a PHP page to get the data that the user entered and saved in the database (values.php)
 
 I used Apache HTTP Server Version 2.5 (Local Server) localhost
+I created 2 separated 
+
+table 1 for the 6 motors (contains 7 cloumn "motor1" ...."motor6" + ID)
+table 2 for the motion (contains 4 cloumn "forward - right - left - backward - stop" + ID)
+The ID is increament automatically with data entered
 
 ---------------------------------------------------------------------------------------
 
