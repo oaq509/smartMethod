@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="index.css"/>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+<meta charset="utf-8">
+<title>الصفحة الرئيسية</title>
+</head>
+
+<body>
+<header style=" background-color:#55A3EC; width:100%; height:180px;">
+<center><h1 style="padding-top:80px; color:#FFFFFF"> <strong>لوحة التحكم </strong>  </h1></center>
+
+</header>
+
+<form action="values.php" method="post" target="_blank">
+
+
+<div class="container">
+
+  <div id="motor">
+<label> <h1>محرك 1</h1> </label><input type="range" name="m1" min="0" max="90" id="slider"/>
+<div id="selector">
+     <div id="selectValue"> </div>
+    </div>
+
+	
+    
+<label><h1> محرك 2</h1></label><input type="range" name="m2" min="0" max="90" id="slider2"/>
+<div id="selector2">
+     <div id="selectValue2"> </div>
+    </div>
+
+
+
+<label><h1> محرك 3</h1></label><input type="range" name="m3" min="0" max="90" id="slider3"/>
+
+<div id="selector3">
+     <div id="selectValue3"> </div>
+    </div>
+
+
+<label><h1>محرك 4 </h1></label><input type="range" name="m4" min="0" max="90" id="slider4"/>
+<div id="selector4">
+     <div id="selectValue4"> </div>
+    </div>
+
+
+
+<label><h1>محرك 5</h1> </label><input type="range" name="m5" min="0" max="90" id="slider5"/>
+
+<div id="selector5">
+     <div id="selectValue5"> </div>
+    </div>
+
+
+<label><h1> محرك 6</h1></label><input type="range" name="m6" min="0" max="90" id="slider6"/>
+<div id="selector6">
+     <div id="selectValue6"> </div>
+    </div>
+
+
+
+</div>
+<div id="button" dir="rtl">
+<input type="submit" value="تحفظ" name="run" class="button button-2"/><br/><br/>
+<input type="submit" value="تشغيل" name="run" class="button button-2"/>
+</div>
+</div>
+   <br/><br/><br/>
+ 
+ <center>
+  <div id="motion" style="">
+  
+ <input type="radio" name="motion" id="Forward" hidden="" value="Forward"/> <label for="Forward"> 
+  <div class="button button-1" id="F" onClick="F()"><strong>Forward</strong></div> </label><br/>
+  
+  <input type="radio" name="motion" id="Left" hidden="" value="Left"/> <label for="Left"> 
+  <div class="button button-1" id="L" onClick="L()"><strong>Left</strong></div></label>
+  
+  
+   <input type="reset" value="stop" name="stop" id="Stop" class="button button-S" onClick="S()"/>
+   
+   <input type="radio" name="motion" id="Right" hidden="" value="Right" /> <label for="Right"> 
+    <div class="button button-1" id="R" onClick="R()" ><strong>Right</strong></div></label><br/>
+    
+    <input type="radio" name="motion" id="Backward" hidden="" value="Backward"/> <label for="Backward"> 
+     <div class="button button-1" id="B" onClick="B()"><strong>Backward</strong></div></label>
+     
+     </div>
+
+</center>
+</form>
+<script>
+
+function S(){
+	document.getElementById("R").style.backgroundColor="white";
+	document.getElementById("B").style.backgroundColor="white";
+	document.getElementById("F").style.backgroundColor="white";
+	document.getElementById("L").style.backgroundColor="white";
+	document.getElementById("selectValue").innerHTML=45;
+	document.getElementById("selectValue2").innerHTML=45;
+	document.getElementById("selectValue3").innerHTML=45;
+	document.getElementById("selectValue4").innerHTML=45;
+	document.getElementById("selectValue5").innerHTML=45;
+	document.getElementById("selectValue6").innerHTML=45;
+	}
+
+function R(){
+	document.getElementById("R").style.backgroundColor="red";
+	document.getElementById("B").style.backgroundColor="white";
+	document.getElementById("F").style.backgroundColor="white";
+	document.getElementById("L").style.backgroundColor="white";
+	
+	}
+
+function L(){
+	document.getElementById("R").style.backgroundColor="white";
+	document.getElementById("B").style.backgroundColor="white";
+	document.getElementById("F").style.backgroundColor="white";
+	document.getElementById("L").style.backgroundColor="red";
+	
+	}
+
+function B(){
+	document.getElementById("R").style.backgroundColor="white";
+	document.getElementById("B").style.backgroundColor="red";
+	document.getElementById("F").style.backgroundColor="white";
+	document.getElementById("L").style.backgroundColor="white";
+	
+	}
+
+function F(){
+	document.getElementById("R").style.backgroundColor="white";
+	document.getElementById("B").style.backgroundColor="white";
+	document.getElementById("F").style.backgroundColor="red";
+	document.getElementById("L").style.backgroundColor="white";
+	
+	}
+
+var slider = document.getElementById("slider")
+var selector = document.getElementById("selector")
+var selectValue = document.getElementById("selectValue")
+var slider2 = document.getElementById("slider2")
+var selector2 = document.getElementById("selector2")
+var selectValue2 = document.getElementById("selectValue2")
+var slider3 = document.getElementById("slider3")
+var selector3 = document.getElementById("selector3")
+var selectValue3 = document.getElementById("selectValue3")
+var slider4 = document.getElementById("slider4")
+var selector4 = document.getElementById("selector4")
+var selectValue4 = document.getElementById("selectValue4")
+var slider5 = document.getElementById("slider5")
+var selector5 = document.getElementById("selector5")
+var selectValue5 = document.getElementById("selectValue5")
+var slider6= document.getElementById("slider6")
+var selector6 = document.getElementById("selector6")
+var selectValue6 = document.getElementById("selectValue6")
+
+
+selectValue.innerHTML=slider.value;
+selectValue2.innerHTML=slider2.value;
+selectValue3.innerHTML=slider3.value;
+selectValue4.innerHTML=slider4.value;
+selectValue5.innerHTML=slider5.value;
+selectValue6.innerHTML=slider6.value;
+
+slider.oninput=function() {selectValue.innerHTML=this.value;}
+slider2.oninput=function() {selectValue2.innerHTML=this.value;}
+slider3.oninput=function() {selectValue3.innerHTML=this.value;}
+
+slider4.oninput=function() {selectValue4.innerHTML=this.value;}
+slider5.oninput=function() {selectValue5.innerHTML=this.value;}
+slider6.oninput=function() {selectValue6.innerHTML=this.value;}
+
+</script>
+
+<div style=" background-color:#55A3EC; width:100%; height:180px; margin-top:40px;">
+
+<center><h1 style="padding-top:80px; color:#FBFBFB; direction:rtl" > إعداد الطالب : أويس علي القرني</h1></center>
+
+</div>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+ 
+  <script src="assets/js/main.js"></script>
+  
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "752df6ad-95f5-43b7-8ee7-b9fbb7bc8975", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "09454046-a492-49fd-b720-a2519c9aba88", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
