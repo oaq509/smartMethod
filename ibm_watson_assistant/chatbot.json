@@ -1,0 +1,310 @@
+{
+  "intents": [
+    {
+      "intent": "السلام",
+      "examples": [
+        {
+          "text": "السلام"
+        },
+        {
+          "text": "السلام عليكم"
+        },
+        {
+          "text": "السلام عليكم ورحمة الله"
+        },
+        {
+          "text": "السلام عليكم ورحمة الله وبركاتة"
+        },
+        {
+          "text": "سلام"
+        },
+        {
+          "text": "سلام عليكم"
+        }
+      ],
+      "description": "السلام عليكم"
+    },
+    {
+      "intent": "ترحيب",
+      "examples": [
+        {
+          "text": "اهلا"
+        },
+        {
+          "text": "مرحبا"
+        },
+        {
+          "text": "هلا"
+        }
+      ],
+      "description": "مرحبا"
+    },
+    {
+      "intent": "حجوزات",
+      "examples": [
+        {
+          "text": "ابغى احجز"
+        },
+        {
+          "text": "حجز"
+        },
+        {
+          "text": "هل عندكم حجوزات"
+        },
+        {
+          "text": "هل متوفر حجز"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1626057659869",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_1_1626057659876"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1626057716520",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_1_1626057716520"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1626057736352",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1626057736352"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ماليوم المناسب ؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1626057659869",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1626057659876",
+      "previous_sibling": "handler_1_1626057659876"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مالوقت المناسب ؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1626057716520",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1626057716520",
+      "previous_sibling": "handler_1_1626057716520"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "كم عدد الأشخاص"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_7_1626057736352",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1626057736352",
+      "previous_sibling": "handler_3_1626057736352"
+    },
+    {
+      "type": "standard",
+      "title": "ترحيب",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "يا هلا تفضل"
+              },
+              {
+                "text": "اهلا حياك كيف أقدر أساعدك"
+              },
+              {
+                "text": "اهلا وسهلا"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ترحيب",
+      "dialog_node": "node_2_1626057138568",
+      "previous_sibling": "مرحبا"
+    },
+    {
+      "type": "frame",
+      "title": "حجوزات",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "تم الحجز"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#حجوزات",
+      "dialog_node": "node_5_1626057578472"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1626057578472",
+      "variable": "$date",
+      "dialog_node": "slot_3_1626057659869"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1626057578472",
+      "variable": "$time",
+      "dialog_node": "slot_3_1626057716520",
+      "previous_sibling": "slot_3_1626057659869"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1626057578472",
+      "variable": "$number",
+      "dialog_node": "slot_7_1626057736352",
+      "previous_sibling": "slot_3_1626057716520"
+    },
+    {
+      "type": "standard",
+      "title": "أي شيء آخر",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ما فهمت، اكتب مرة ثانيه لا هنت"
+              },
+              {
+                "text": "هل يمكنك إعادة صياغة عبارتك؟ لم أفهم"
+              },
+              {
+                "text": "مافهمت قصدك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "أي شيء آخر",
+      "previous_sibling": "node_2_1626057138568",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "مرحبا",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "وعليكم السلام ورحمة الله ، اهلا كيف أقدر اساعدك"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#السلام",
+      "dialog_node": "مرحبا",
+      "previous_sibling": "node_5_1626057578472"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": ":هل قصدت",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "كل ما سبق خطأ"
+    },
+    "human_agent_assist": {
+      "prompt": ":هل قصدت"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "تحدث",
+  "language": "ar",
+  "description": "الرد على المستخدمين Chatbot"
+}
