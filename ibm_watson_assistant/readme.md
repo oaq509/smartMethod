@@ -4,4 +4,4 @@
 
 You can try mychatbot that was made using IBM watson assistant in the link below
 
-shorturl.at/bxCG0
+https://shorturl.at/bxCG0
