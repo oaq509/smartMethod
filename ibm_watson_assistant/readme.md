@@ -4,6 +4,6 @@
 
 You can try mychatbot that was made using IBM watson assistant in the link below
 
-oyis.me/robot
+https://oyis.me/robot
 
 
