@@ -30,11 +30,12 @@ In [speech.cfg](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and
 apikey = '32LEPrjPOdWtA2dO4UHoj9Nu5My48YguWNpSF3gawrJ-' #You need to change it to your apikey
 ```
 Create [output.text](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/output.txt) file by writing this code below in [transcribe.py](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/transcribe.py) file.
+> inside the on_message function. 
 ```
 with open('output.txt', 'w') as out:
             out.writelines(data['results'][0]['alternatives'][0]['transcript'])
 ```
-> inside the on_message function. 
+
 
 
 ### Text to Speech
