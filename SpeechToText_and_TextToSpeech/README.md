@@ -1,17 +1,13 @@
 Task #4 
 =
-"Speech to Text and Text to Speech"
+Speech to Text and Text to Speech
 =
 
-## Using
-> This task for converting the speech to text and text to speech by using IBM WATSON and Python language.
-> - Python programing language and IBM WATSON Text to Speech & Speech to text
+> This task for convert speech to text and text to speech by using IBM WATSON and Python programing language.
 
 
 
-
-
-To get a local copy up and running follow these simple steps.
+To try this in your local pc follow these simple steps.
 
 ### Prerequisites
 * [Python](https://www.python.org/downloads/)
@@ -21,7 +17,7 @@ To get a local copy up and running follow these simple steps.
 * Setup Watson STT Service: cloud.ibm.com/catalog 
   * Speech to Text. 
   * Text to Speech.
-* Clone Live STT Code: https://github.com/IBM/watson-streaming-stt 
+* Clone Live STT Code [watson-streaming](https://github.com/IBM/watson-streaming-stt) 
 * using command -git clone https://github.com/IBM/watson-streaming-stt 
 
 ### Install
