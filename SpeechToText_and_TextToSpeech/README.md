@@ -1,7 +1,9 @@
-Task #4 "Speech to Text and Text to Speech"
+Task #4 
+"Speech to Text and Text to Speech"
 =
 
 ## Using
+> This task for converting the speech to text and text to speech by using IBM WATSON and Python language.
 > - Python programing language and IBM WATSON Text to Speech & Speech to text
 
 
