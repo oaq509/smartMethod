@@ -44,7 +44,7 @@ authenticator = IAMAuthenticator('32LEPrjPOdWtA2dO4UHoj9Nu5My48YguWNpSF3gawrJ-')
 tts = TextToSpeechV1(authenticator=authenticator)
 tts.set_service_url('https://api.us-east.speech-to-text.watson.cloud.ibm.com/instances/a09b1232-5315-484f-8a49-220738e07890') #You need to change it to your api url
 ```
-* Create [output.mp3](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/output.mp3) file write the code 
+Create [output.mp3](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/output.mp3) file write the code 
 > paste this inside the read_audio function. 
 ```
 with open('output.txt', 'r') as f:
