@@ -7,7 +7,7 @@ Speech to Text and Text to Speech
 
 
 
-To try this in your local pc follow these simple steps.
+### To try this in your local pc follow these simple steps.
 
 ### Prerequisites
 * [Python](https://www.python.org/downloads/)
