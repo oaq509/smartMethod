@@ -18,7 +18,7 @@ Speech to Text and Text to Speech
   * Speech to Text. 
   * Text to Speech.
 * Clone Live STT Code [watson-streaming](https://github.com/IBM/watson-streaming-stt) 
-* using command -git clone https://github.com/IBM/watson-streaming-stt 
+* using command ```git clone https://github.com/IBM/watson-streaming-stt ```
 
 ### Install
 ```
