@@ -59,8 +59,5 @@ things together. The output will look something like this.
 Transcription is far from perfect, but you get to see an example here
 of chunking the stream as we go and how it corrects with context.
 
-Note: nursery rhymes / poetry probably really push the context fixing
-in terrible directions, but it's the thing that I can repeat over and
-over again as a parent of a young child.
 
 .. _Watson STT service: https://cloud.ibm.com/services/speech-to-text
