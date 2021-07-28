@@ -1,17 +1,10 @@
-
-
-
-
-Speech to Text and Text to Speech 
+Task #4 "Speech to Text and Text to Speech"
 =
 
-
-> This respiratory is to convert the speech to text and vice versa by using [IBM WATSON](https://cloud.ibm.com) and [Python](https://www.python.org/downloads/) language.
-
 ## Using
+> - Python programing language and IBM WATSON Text to Speech & Speech to text
 
-- Python language
-- Speech to text IBM WATSON & Text to Speech IBM WATSON
+
 
 
 
