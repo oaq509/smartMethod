@@ -13,8 +13,8 @@ Speech to Text and Text to Speech
 ## Built With
 
 - Python language
-- Speech to text IBM WATSON
-- Text to Speech IBM WATSON
+- Speech to text IBM WATSON & Text to Speech IBM WATSON
+
 
 
 
