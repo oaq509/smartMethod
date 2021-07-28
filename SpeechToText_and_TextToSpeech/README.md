@@ -2,11 +2,11 @@
 
 
 
-# Live Speech to Text and Text to Speech 
+Speech to Text and Text to Speech 
 
 > This respiratory is to convert the speech to text and vice versa by using [IBM WATSON](https://cloud.ibm.com) and [Python](https://www.python.org/downloads/) language.
 
-![unnamed](https://user-images.githubusercontent.com/66702376/125099767-0b7df680-e0e1-11eb-9d98-f6cf0a0e8ff9.png)
+![unnamed](https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/speech-to-text-recognition-using-python/Images/speech-recognition-python.png)
 
 
 
@@ -33,16 +33,16 @@ To get a local copy up and running follow these simple steps.
 
 ### Install
 ```
-pip3 install pyaudio
-pip3 install websocket-client
+pip install pyaudio
+pip install websocket-client
 ``` 
 
 ### Speech to Text 
-* In [speech.cfg](https://github.com/AsmaAbdullah1998/Live--Speech-to-Text-and-Text-to-Speech-/blob/main/speech.cfg) file
+* In [speech.cfg](https://github.com/oaq509/smartMethod/SpeechToText_and_TextToSpeech/speech.cfg) file
 ``` 
-apikey = 'YD3YBUw2Cv3CRQUZ7OGDzLpXNy-5HIr9LtSEV2OrCXAZ' #Your apikey
+apikey = '32LEPrjPOdWtA2dO4UHoj9Nu5My48YguWNpSF3gawrJ-' #Your apikey
 ```
-* Create [output.text](https://github.com/AsmaAbdullah1998/Live--Speech-to-Text-and-Text-to-Speech-/blob/main/output.txt) file by writing this code below in [transcribe.py](https://github.com/AsmaAbdullah1998/Live--Speech-to-Text-and-Text-to-Speech-/blob/main/transcribe.py) file.
+* Create [output.text](https://github.com/oaq509/smartMethod/SpeechToText_and_TextToSpeech/output.txt) file by writing this code below in [transcribe.py](https://github.com/oaq509/smartMethod/SpeechToText_and_TextToSpeech/transcribe.py) file.
 ```
 with open('output.txt', 'w') as out:
             out.writelines(data['results'][0]['alternatives'][0]['transcript'])
@@ -51,11 +51,11 @@ with open('output.txt', 'w') as out:
 
 
 ### Text to Speech
-* In [transcribe.py](https://github.com/AsmaAbdullah1998/Live--Speech-to-Text-and-Text-to-Speech-/blob/main/transcribe.py) file write the code: 
+* In [transcribe.py](https://github.com/oaq509/smartMethod/SpeechToText_and_TextToSpeech/transcribe.py) file write the code: 
 ```
-authenticator = IAMAuthenticator('vYI9rkcSWl_wELYNt2Y-5uxAuNDmPKL9XkMLal4R0Vn1') #Your apikey
+authenticator = IAMAuthenticator('32LEPrjPOdWtA2dO4UHoj9Nu5My48YguWNpSF3gawrJ-') #Your apikey
 tts = TextToSpeechV1(authenticator=authenticator)
-tts.set_service_url('https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/4afce834-c1d1-4edf-ba89-dafcd89544a0') #Your url
+tts.set_service_url('https://api.us-east.speech-to-text.watson.cloud.ibm.com/instances/a09b1232-5315-484f-8a49-220738e07890') #Your url
 ```
 * Create [output.mp3](https://github.com/AsmaAbdullah1998/Live--Speech-to-Text-and-Text-to-Speech-/blob/main/output.mp3) file write the code 
 ```
@@ -78,7 +78,6 @@ with open('output.txt', 'r') as f:
 
 ## 📝 Sources 
 
-- [smart methods youtube video](https://www.youtube.com/watch?v=Z_N2aAHfiGU&t=5229s)
 - https://www.youtube.com/watch?v=8k8S5ruFAUs&t=602s
 - https://www.youtube.com/watch?v=A9_0OgW1LZU&t=310s
 - https://www.youtube.com/watch?v=YCyuZM454_I&t=849s
