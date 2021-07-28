@@ -5,9 +5,7 @@ Speech to Text and Text to Speech
 
 This task for convert speech to text and text to speech by using IBM WATSON and Python programing language.
 
-
-
-### To try this in your local pc follow these simple steps.
+To run this in your local pc follow these simple steps.
 
 You need to have
 * [Python](https://www.python.org/downloads/) installed in your pc, And account in [IBM Cloud](https://cloud.ibm.com)
