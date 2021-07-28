@@ -61,11 +61,9 @@ with open('output.txt', 'r') as f:
 
 Sources 
 
-https://www.youtube.com/watch?v=8k8S5ruFAUs&t=602s
- ‎
-https://www.youtube.com/watch?v=A9_0OgW1LZU&t=310s
- ‎
-https://www.youtube.com/watch?v=YCyuZM454_I&t=849s
+- https://www.youtube.com/watch?v=8k8S5ruFAUs&t=602s
+- https://www.youtube.com/watch?v=A9_0OgW1LZU&t=310s
+- https://www.youtube.com/watch?v=YCyuZM454_I&t=849s
 
 
 
