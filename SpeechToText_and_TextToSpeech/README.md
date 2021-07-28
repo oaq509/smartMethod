@@ -9,8 +9,8 @@ This task for convert speech to text and text to speech by using IBM WATSON and 
 
 ### To try this in your local pc follow these simple steps.
 
-### Prerequisites
-* [Python](https://www.python.org/downloads/)
+### You need to have
+* [Python](https://www.python.org/downloads/) installed in your pc
 * Account in [IBM Cloud](https://cloud.ibm.com)
 
 ### Setup
