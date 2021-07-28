@@ -1,6 +1,6 @@
-======================
+=
 بسم الله الرحمن الرحيم
-======================
+=
 
 I used HTML to create the structure for the web page with the buttons and every element on the page (index.html)
 
