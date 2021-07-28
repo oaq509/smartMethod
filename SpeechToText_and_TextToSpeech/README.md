@@ -25,11 +25,11 @@ You need to have
 ``` 
 
 ### Speech to Text 
-* In [speech.cfg](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/speech.cfg) file
+In [speech.cfg](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/speech.cfg) file
 ``` 
 apikey = '32LEPrjPOdWtA2dO4UHoj9Nu5My48YguWNpSF3gawrJ-' #You need to change it to your apikey
 ```
-* Create [output.text](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/output.txt) file by writing this code below in [transcribe.py](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/transcribe.py) file.
+Create [output.text](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/output.txt) file by writing this code below in [transcribe.py](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/transcribe.py) file.
 ```
 with open('output.txt', 'w') as out:
             out.writelines(data['results'][0]['alternatives'][0]['transcript'])
@@ -38,7 +38,7 @@ with open('output.txt', 'w') as out:
 
 
 ### Text to Speech
-* In [transcribe.py](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/transcribe.py) file write the code: 
+In [transcribe.py](https://github.com/oaq509/smartMethod/blob/main/SpeechToText_and_TextToSpeech/transcribe.py) file write the code: 
 ```
 authenticator = IAMAuthenticator('32LEPrjPOdWtA2dO4UHoj9Nu5My48YguWNpSF3gawrJ-') #Your apikey
 tts = TextToSpeechV1(authenticator=authenticator)
