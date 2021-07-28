@@ -10,15 +10,13 @@ Speech to Text and Text to Speech
 
 
 
-## Built With
+## Using
 
 - Python language
 - Speech to text IBM WATSON & Text to Speech IBM WATSON
 
 
 
-
-## 🦾 Getting Started
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
@@ -30,11 +28,11 @@ To get a local copy up and running follow these simple steps.
   * Speech to Text. 
   * Text to Speech.
 * Clone Live STT Code: https://github.com/IBM/watson-streaming-stt 
+* using command -git clone https://github.com/IBM/watson-streaming-stt 
 
 ### Install
 ```
-pip install pyaudio
-pip install websocket-client
+   pip install -r requirements.txt
 ``` 
 
 ### Speech to Text 
