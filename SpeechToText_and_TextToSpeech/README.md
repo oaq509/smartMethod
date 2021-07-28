@@ -8,16 +8,16 @@ This task for convert speech to text and text to speech by using IBM WATSON and 
 To run this in your local pc follow these simple steps.
 
 You need to have
-* [Python](https://www.python.org/downloads/) installed in your pc, And account in [IBM Cloud](https://cloud.ibm.com)
+- [Python](https://www.python.org/downloads/) installed in your pc, And account in [IBM Cloud](https://cloud.ibm.com)
 
 ### Setup
-* Setup Watson STT Service: cloud.ibm.com/catalog 
-  * Speech to Text. 
-  * Text to Speech.
+- Setup Watson STT Service: cloud.ibm.com/catalog 
+  - Speech to Text. 
+  - Text to Speech.
 
  ‎
-* Clone Live STT Code [watson-streaming](https://github.com/IBM/watson-streaming-stt) 
-* using command  ```git clone https://github.com/IBM/watson-streaming-stt ```
+- Clone Live STT Code [watson-streaming](https://github.com/IBM/watson-streaming-stt) 
+- using command  ```git clone https://github.com/IBM/watson-streaming-stt ```
 
 ### Install
 ```
