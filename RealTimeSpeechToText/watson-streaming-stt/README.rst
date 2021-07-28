@@ -11,9 +11,9 @@ Installation
 This code is designed to run under python3 
 we need to run the following:
 
-::
-   pip install pipwin
-   pipwin install -r requirements.txt
+
+ -pip install pipwin
+ -pipwin install -r requirements.txt
 
 That will build you a clean environment and install the required
 pyaudio and websockets libraries for it's use.
